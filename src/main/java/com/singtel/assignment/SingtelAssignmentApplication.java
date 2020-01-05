@@ -20,7 +20,8 @@ public class SingtelAssignmentApplication {
 		Animals[] animals = new Animals[]{
 				new Duck(),
 				new Chicken(),
-				new Rooster(),
+				new Rooster(RoosterLanguages.Tamil),
+				new Rooster(RoosterLanguages.Danish),
 				new Parrots(ParrotsType.PARROT_WITH_CATS),
 				new Parrots(ParrotsType.PARROT_WITH_DOGS),
 				new Parrots(ParrotsType.PARROT_WITH_ROOSTER),
@@ -37,7 +38,7 @@ public class SingtelAssignmentApplication {
 
 	}
 
-	private static Map<String, Integer> getBehavioursCount(Animals[] animals) {
+	public static Map<String, Integer> getBehavioursCount(Animals[] animals) {
 
 		int flyCount = 0;
 		int walkCount = 0;

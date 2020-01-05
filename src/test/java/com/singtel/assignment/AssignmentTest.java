@@ -22,7 +22,7 @@ class AssignmentTest {
 	void prePare() {
 		duck = new Duck();
 		chicken = new Chicken();
-		rooster= new Rooster();
+		rooster= new Rooster(RoosterLanguages.Tamil);
 		parrotWithCat = new Parrots(ParrotsType.PARROT_WITH_CATS);
 		parrotWithDogs = new Parrots(ParrotsType.PARROT_WITH_DOGS);
 		fish = new Fish();
