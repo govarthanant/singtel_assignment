@@ -2,6 +2,7 @@ package com.singtel.assignment;
 
 import com.singtel.assignment.animals.Animals;
 import com.singtel.assignment.animals.birds.Duck;
+import com.singtel.assignment.animals.birds.Rooster;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -13,6 +14,10 @@ public class SingtelAssignmentApplication {
 
 		Animals duck = new Duck();
 		duck.performFly();
+
+		Animals rooster = new Rooster();
+		rooster.performSing();
+		rooster.performWalk();
 	}
 
 }
